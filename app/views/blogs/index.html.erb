@@ -16,9 +16,9 @@
       <tr>
         <td><%= blog.content %></td>
         <td><%= blog.person_id %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '查看', blog %></td>
+        <td><%= link_to '编辑', edit_blog_path(blog) %></td>
+        <td><%= link_to '删除', blog, method: :delete, data: { confirm: '你确定要删除吗？' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to '新建文章', new_blog_path %>
